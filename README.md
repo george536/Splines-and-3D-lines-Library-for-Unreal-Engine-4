@@ -16,3 +16,6 @@ This is the 2 lines (without filling) that are created isnide Main.cpp above
 This is the 2 lines (with filling) that are created isnide Main.cpp above
 
 ![image](https://user-images.githubusercontent.com/76963708/211177971-3ddfaccd-0db4-4b94-8bec-ed1038b051c5.png)
+
+# Sample that was made using the library
+![Screenshot 2023-01-08 164027](https://user-images.githubusercontent.com/76963708/211220498-02d23443-5579-4447-a101-96ac6828d5d7.jpg)
