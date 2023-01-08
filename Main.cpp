@@ -18,7 +18,6 @@ AMain::AMain()
 	s->AddPoint(0.0f, 0.0f, 0.0f);
 	s->AddPoint(100.0f, 0.0f, 0.0f);
 	s->AddPoint(100.0f, 100.0f, 0.0f);
-	s->AddPoint(0.0f, 100.0f, 0.0f);
 
   // Declare two 3D lines
 	Line1 = new Line3D(this);
