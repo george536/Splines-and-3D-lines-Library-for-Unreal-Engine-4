@@ -7,7 +7,7 @@ To use the library, simple add **Spline&3DLineLib** folder to your source code
 # Examples
 This is showing the spline created inside Main.cpp above
 
-![image](https://user-images.githubusercontent.com/76963708/211177926-64ee84f0-7e83-4f46-9ea7-238cab8607ac.png)
+![image](https://user-images.githubusercontent.com/76963708/211224836-818450fe-d740-4dd6-a2cd-bf39497d1de1.png)
 
 This is the 2 lines (without filling) that are created isnide Main.cpp above
 
