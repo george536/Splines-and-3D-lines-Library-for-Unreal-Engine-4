@@ -88,3 +88,7 @@ void Spline::ChangeTangent(int index, float DeltaX, float DeltaY, float DeltaZ) 
 		MeshComponent->Rebuild(UEComps);
 	}
 }
+
+int Spline::GetSplinePoints() {
+	return SplineComponent->GetNumberOfSplinePoints();
+}

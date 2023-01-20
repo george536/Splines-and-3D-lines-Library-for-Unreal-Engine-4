@@ -51,4 +51,7 @@ public:
 
 	// Change tangent on spline point
 	void ChangeTangent(int index, float DeltaX, float DeltaY, float DeltaZ);
+
+	// Returns the number of points in a spline
+	int GetSplinePoints();
 };

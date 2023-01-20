@@ -55,7 +55,7 @@ public:
 class AreaFiller {
 public:
 	// This function can be usesd to fill area between two lines regardless of the shape of area they form
-	static void Fill(AActor* ParentClass,int index, Line3D* Line1, Line3D* Line2, FColor color,int coverignDensity) {
+	static void Fill(AActor* ParentClass,int index, Line3D* Line1, Line3D* Line2, FColor color,int coverignDensity, float thickness, float Deltaelevation) {
 		FVector s1 = Line1->GetPointAt(index);
 		FVector s2 = Line2->GetPointAt(index);
 		FVector E1 = Line1->GetPointAt(index + 1);
@@ -67,8 +67,11 @@ public:
 		d1 = d1 / coverignDensity;
 		d2 = d2 / coverignDensity;
 
+		s1.Z += Deltaelevation;
+		s2.Z += Deltaelevation;
+
 		for (int j = 0; j < coverignDensity; j++) {
-			DrawDebugLine(ParentClass->GetWorld(), s1 + d1, s2 + d2, color, true, -1, 0, 5.0f);
+			DrawDebugLine(ParentClass->GetWorld(), s1 + d1, s2 + d2, color, true, -1, 0, thickness);
 			s1 = s1 + d1;
 			s2 = s2 + d2;
 		}

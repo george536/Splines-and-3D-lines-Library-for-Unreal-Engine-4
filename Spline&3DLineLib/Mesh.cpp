@@ -3,9 +3,9 @@
 
 bool Mesh::BuildComponent(UEComponents UEComps,float XScale, float YScale, float ZScale) {
 
-	XScale = X;
-	YScale = Y;
-	ZScale = Z;
+	X = XScale;
+	Y = YScale;
+	Z = ZScale;
 
 	for (int SplineCount = 0; SplineCount < (UEComps.SplineComponent->GetNumberOfSplinePoints()) - 1; SplineCount++) {
 
@@ -29,6 +29,10 @@ void Mesh::Rebuild(UEComponents UEComps) {
 }
 
 void Mesh::DeleteMesh(UEComponents UEComps, int index) {
+
+	if(SplineMeshes.Num()==0){
+		return;
+	}
 
 	if (index == 0 || index == (SplineMeshes.Num() - 1)) {
 		SplineMeshes[index]->DestroyComponent();
