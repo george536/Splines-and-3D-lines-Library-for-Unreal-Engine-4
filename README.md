@@ -4,6 +4,8 @@ This Library provides a simple way to create spline points and assign meshes to 
 # How to implement
 To use the library, simple add **Spline&3DLineLib** folder to your source code
 
+![image](https://user-images.githubusercontent.com/76963708/223025293-c806007b-3097-4a0a-87dd-ef1484c9410d.png)
+
 # Examples
 This is showing the spline created inside Main.cpp above
 
